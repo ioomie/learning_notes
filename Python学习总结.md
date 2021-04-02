@@ -1,2 +1,195 @@
-# Python学习总结
+# Python3学习总结
+
+## 关于数据类型
+
+在Py中的数据类型有可变和不可变一说，划分如下：
+
+不可变：
+
+- Number 数字 包括int float bool complex（复数）
+- String 字符串
+- Tuple 元组
+
+可变：
+
+- List 列表
+- Dictionary 字典
+- Set 集合
+
+*如何理解可变和不可变：*
+
+> 当这些不可变数据类型一旦初始化（赋值）成功后，其对应的在内存地址上的数据本身就不可以有任何变化了
+>
+> 当对一个不可变数据类型变量进行连续的赋值时，其变量所指向的内存是一直在改变的
+>
+> 而对于可变类型，在赋值之后是可以改变其内部值数据本身
+
+## list 列表
+
+定义：一种有序的集合，可以随时添加和删除元素
+
+初始化：
+
+```python
+list_test = ["123","456","789"]
+
+# 空列表
+list_none = []
+```
+
+获取元素：
+
+```python
+# 结果为"123"
+list_test[0]
+
+# 直接获取最后一个
+list_test[-1]
+```
+
+添加元素：
+
+```python
+# 添加到末尾
+list_test.append("abc")
+
+# 指定位置添加
+list_test.insert(1,"ABC")
+```
+
+删除元素：
+
+```python
+# 删除末尾
+list_test.pop()
+
+# 删除指定元素 通过下标指定
+list_test.pop(1)
+```
+
+修改元素：
+
+```python
+list_test[1] = "newstr"
+```
+
+## tuple 元组
+
+定义：有序列表，一旦初始化就不能再修改
+
+初始化：
+
+```python
+tuple_test = ("123","567")
+
+# 空元组
+tuple_none = ()
+
+# 只定义一个元素
+tuple_one = (3,)
+
+# 错误定义
+# tuple_error = (3)
+```
+
+**"可变"Tuple**
+
+```python
+tuple_list = ("a","b",["abc","bcd"])
+
+tuple_list[2][0] = "xxx"
+
+# 这里看似修改了元组，实际上是修改了列表
+```
+
+## dict 字典
+
+map，采用键值对存储
+
+初始化：
+
+```python
+dict_test = {
+	0:"zero",
+	1:"one",
+	2:"two",
+	3:"three"
+}
+```
+
+查找方法：
+
+```python
+# 第一种 通过key查找 但这样会存在key不存在字典而报错的现象
+dict_test[0]
+dict_test[4]
+
+# 其实可以用 0 in dict_test 的语句判断该key是否在字典中存在
+
+# 第二种 get()方法 当字典中没有该key时可以返回自定义的value
+dict_test.get(0,"none")
+dict_test.get(4,"none")
+```
+
+添加元素：
+
+```python
+# 第一种 当字典中不存在该key:value的时候会添加该key
+# 如果是存在则相当于修改该key的value
+dict_test[4] = "four"
+dict_test[0] = "zerooooooooo"
+
+# 第二种 update()
+dict_test.update({4:"foerrrrrr"})
+# 如果采用这种形式其参数必须是字符串对象
+dict_test.update(strkey = "strvalue",strkey_second = "strvalue_second")
+```
+
+删除元素：
+
+```
+# del
+del [dict_test[0]]
+
+# pop
+dict_test.pop(0)
+
+# clear 删除所有
+dict_test.clear()
+```
+
+## set 集合
+
+初始化：
+
+```python
+set_test = {1,2,3,4,5}
+set_null = set()
+# 生成空集合不能使用 set_null = {} 的方式，这个方式生成的是空字典非集合
+```
+
+集合中的值是不重复的，如果在初始化的时候有重复值，但在打印的时候只会输出其中的一个
+
+添加元素
+
+```python
+# add()
+set_test.add(6)
+
+# update()
+set_test.update(["one","two"])
+set_test.update("abc")
+```
+
+删除元素：
+
+```python
+set_test.remove(0)
+```
+
+## range()
+
+返回一个可迭代对象，非列表类型
+
+需要和 **list**() 函数将迭代对象转换为列表
 
