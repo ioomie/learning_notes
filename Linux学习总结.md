@@ -72,3 +72,116 @@ cd -
 cd ..
 
 ![image-20210406113027211](images-folder/image-20210406113027211.png)
+
+## 目录操作
+
+### 创建目录
+
+mkdir xxx
+
+mkdir /xxx 在根目录新建
+
+mkdir ./xxx 在当前目录新建 ./ 可以省略
+
+mkdir xxx xxx xxx 创建多目录
+
+无法创建已经存在的目录
+
+mkdir xxx/xxx/xxx 创建多级目录
+
+mkdir -p xxx/xxx/xxx 递归创建 当上级目录不存在的时候也会创建而不是提示找不到该文件
+
+![image-20210406182802549](images-folder/image-20210406182802549.png)
+
+*可以利用ls -R xxx 来检查该递归创建的结果*
+
+### 删除目录
+
+rmdir 只能删除空白目录（有其他目录也算有文件）
+
+rm -r 删除目录 非空也能删除
+
+rm -r -f 删除目录且不提示
+
+![image-20210406194834508](images-folder/image-20210406194834508.png)
+
+## 复制和移动
+
+cp 单独使用的时候只能复制文件
+
+cp -r 可以复制目录
+
+cp -v 可以查看复制的过程
+
+cp -p 复制过去的时候保存之前的时间不作修改
+
+cp -a 复制所有的信息包括权限
+
+![image-20210406194800460](images-folder/image-20210406194800460.png)
+
+## 改名（移动）
+
+用mv操作进行实现
+
+其实在Linux的底层中就是实现了一个移动的操作
+
+mv 旧文件 新文件
+
+![image-20210406194813318](images-folder/image-20210406194813318.png)
+
+## 通配符
+
+星号符 有全部的意思
+
+问号 匹配一个字符
+
+![image-20210406194845740](images-folder/image-20210406194845740.png)
+
+## 文本查看
+
+cat 文本内容显示到终端
+
+head 查看文件开头
+
+head -5 xxx 5表示显示的行数
+
+tail 查看文件结尾
+
+tail -3 xxx
+
+可以利用参数 -f 同步更新信息
+
+tail -f xxx
+
+wc
+
+![image-20210406194947873](images-folder/image-20210406194947873.png)
+
+## 打包压缩
+
+![image-20210406202911068](images-folder/image-20210406202911068.png)
+
+### 打包
+
+tar cf /tmp/etc-backup.tar /etc
+
+### 压缩
+
+gzip bzip2
+
+### 打包的同时也压缩了
+
+tar czf /tmp/etc-backup.tar.gz /etc
+
+tar cjf /tmp/etc-backup.tar.bz2 /etc
+
+bzip2的格式的压缩率要高于gzip
+
+### 解包
+
+tar xf xxx -C xxx
+
+tar zxf xxx -C xxx
+
+tar jxf xxx -C xxx
+
