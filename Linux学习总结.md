@@ -18,7 +18,7 @@ ls /root /home
 
 ls -l
 
-![image-20210406110140408](images-folder/image-20210406110140408.png)
+![image-20210406110140408](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406110140408.png)
 
 从左到右边依次是：
 
@@ -28,7 +28,7 @@ ls -l
 
 ls -a
 
-![image-20210406110742565](images-folder/image-20210406110742565.png)
+![image-20210406110742565](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406110742565.png)
 
 ### 逆向显示
 
@@ -48,9 +48,9 @@ ls -lrt
 
 ls -R
 
-![image-20210406111045798](images-folder/image-20210406111045798.png)
+![image-20210406111045798](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406111045798.png)
 
-![image-20210406111102006](images-folder/image-20210406111102006.png)
+![image-20210406111102006](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406111102006.png)
 
 ## cd
 
@@ -71,7 +71,7 @@ cd -
 
 cd ..
 
-![image-20210406113027211](images-folder/image-20210406113027211.png)
+![image-20210406113027211](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406113027211.png)
 
 ## 目录操作
 
@@ -91,7 +91,7 @@ mkdir xxx/xxx/xxx 创建多级目录
 
 mkdir -p xxx/xxx/xxx 递归创建 当上级目录不存在的时候也会创建而不是提示找不到该文件
 
-![image-20210406182802549](images-folder/image-20210406182802549.png)
+![image-20210406182802549](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406182802549.png)
 
 *可以利用ls -R xxx 来检查该递归创建的结果*
 
@@ -103,7 +103,7 @@ rm -r 删除目录 非空也能删除
 
 rm -r -f 删除目录且不提示
 
-![image-20210406194834508](images-folder/image-20210406194834508.png)
+![image-20210406194834508](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406194834508.png)
 
 ## 复制和移动
 
@@ -117,7 +117,7 @@ cp -p 复制过去的时候保存之前的时间不作修改
 
 cp -a 复制所有的信息包括权限
 
-![image-20210406194800460](images-folder/image-20210406194800460.png)
+![image-20210406194800460](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406194800460.png)
 
 ## 改名（移动）
 
@@ -127,7 +127,7 @@ cp -a 复制所有的信息包括权限
 
 mv 旧文件 新文件
 
-![image-20210406194813318](images-folder/image-20210406194813318.png)
+![image-20210406194813318](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406194813318.png)
 
 ## 通配符
 
@@ -135,7 +135,7 @@ mv 旧文件 新文件
 
 问号 匹配一个字符
 
-![image-20210406194845740](images-folder/image-20210406194845740.png)
+![image-20210406194845740](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406194845740.png)
 
 ## 文本查看
 
@@ -155,11 +155,11 @@ tail -f xxx
 
 wc
 
-![image-20210406194947873](images-folder/image-20210406194947873.png)
+![image-20210406194947873](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406194947873.png)
 
 ## 打包压缩
 
-![image-20210406202911068](images-folder/image-20210406202911068.png)
+![image-20210406202911068](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406202911068.png)
 
 ### 打包
 
