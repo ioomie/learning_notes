@@ -32,7 +32,7 @@
 - 列表
 - 元组
 
-[这里包含序列操作的例子]()
+[这里包含序列操作的例子](https://github.com/ioomie/learning_notes/blob/master/code/python_code_example/part1/c2.py)
 
 ### list 列表
 
@@ -231,7 +231,59 @@ set_test.remove(0)
 
 ### filter()
 
+第一个参数为判断函数，可传入自定义函数，也可用lambda表达式
+
+第二个参数为可迭代对象，如列表等
+
+返回一个迭代器对象，可以用list()函数进行转换
+
+### isupper()
+
+如果字符串中包含至少一个区分大小写的字符，并且所有这些(区分大小写的)字符都是大写，则返回 True，否则返回 False
+
+### split()
+
+通过指定分隔符对字符串进行切片，如果参数 num 有指定值，则分隔 num+1 个子字符串
+
+例子：
+
+```python
+str = "123|345|789"
+
+# 以"|"的形式进行分割字符，返回列表的格式
+print(str.split("|"))
+# 将字符串分割成两个字符，遇到的第一个|就分割
+print(str.split("|",1))
+```
+
+### strip()
+
+用于移除字符串头尾指定的字符（默认为空格或换行符）或字符序列
+
+*只能删除开头或是结尾的字符，不能删除中间部分的字符*
+
+例子：
+
+```python
+str  = "\n   hahaha   \n"
+str_str = "000xixixi000"
+
+# 默认什么都不填为删除空格和换行
+print(str.strip())
+print(str_str.strip("0"))
+```
+
+### replace()
+
+三个参数
+
+1. 将被替换的子字符串
+2. 新字符串，用于替换old子字符串
+3. 指替换次数，不超过几次，可以不填默认为替换全部
+
 ## 推导式
+
+[推导式例子](https://github.com/ioomie/learning_notes/blob/master/code/python_code_example/part1/c3.py)
 
 ### 列表推导式
 
@@ -256,7 +308,7 @@ print(bdict)
 
 ## IO操作
 
-[文件操作例子]()
+[文件操作例子](https://github.com/ioomie/learning_notes/blob/master/code/python_code_example/part1/c4.py)
 
 ## 进程和线程
 
@@ -274,4 +326,63 @@ print(bdict)
 
 1. 检测到错误，引发异常
 2. 对异常进行捕获
+
+异常捕获格式（以打开文件为例子）
+
+```python
+try:
+    file = open("namb.txt")
+except Exception as e:
+    print("输出异常")
+    print(e)
+finally:
+    print("不管如何都要将文件进行关闭")
+    file.close()
+```
+
+[异常的处理的例子](https://github.com/ioomie/learning_notes/blob/master/code/python_code_example/part1/c5.py)
+
+## 自定义函数
+
+### 关键字参数
+
+```
+# 如print中的end为关键字参数
+print("xxx",end="我是个结尾")
+```
+
+### 可变长参数
+
+#### *args
+
+这是一个可变参数列表
+
+返回一个元组
+
+```
+# 可变参数
+def arglist(*args):
+    for str in args:
+        print(str)
+
+
+arglist("123", "456", "789")
+```
+
+#### **kwargs
+
+这是一个可变的关键字参数（字典）
+
+返回一个字典
+
+```
+# 可变的关键字参数(字典)
+def kvdict(**kwargs):
+    for k, v in kwargs.items():
+        print("%s -> %s" % (k, v))
+
+
+kvdict(k1=123, k2=456, k3=789)
+
+```
 
