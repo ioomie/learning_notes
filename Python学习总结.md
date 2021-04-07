@@ -32,6 +32,8 @@
 - 列表
 - 元组
 
+[这里包含序列操作的例子]()
+
 ### list 列表
 
 定义：一种有序的集合，可以随时添加和删除元素
@@ -71,6 +73,9 @@ list_test.insert(1,"ABC")
 # 删除末尾
 list_test.pop()
 
+# remove
+dict_test.remove("abc")
+
 # 删除指定元素 通过下标指定
 list_test.pop(1)
 ```
@@ -81,7 +86,7 @@ list_test.pop(1)
 list_test[1] = "newstr"
 ```
 
-#### tuple 元组
+### tuple 元组
 
 定义：有序列表，一旦初始化就不能再修改
 
@@ -110,9 +115,29 @@ tuple_list[2][0] = "xxx"
 # 这里看似修改了元组，实际上是修改了列表
 ```
 
+#### 关于元组的大小比较
+
+假设现在有元组：
+
+```
+tuple1 = (1,20)
+tuple2 = (2,18)
+```
+
+在比大小中，元组的大小是将两个数字以拼接的方式进行比较：
+
+```
+tuple > tuple # False
+tuple < tuple # True
+```
+
+实际就是 120 跟 218 进行比较 大小就是
+
 ### dict 字典
 
 map，采用键值对存储
+
+可以理解为哈希值和对象
 
 初始化：
 
@@ -162,6 +187,7 @@ del [dict_test[0]]
 # pop
 dict_test.pop(0)
 
+
 # clear 删除所有
 dict_test.clear()
 ```
@@ -203,10 +229,49 @@ set_test.remove(0)
 
 需要和 **list**() 函数将迭代对象转换为列表
 
+### filter()
+
+## 推导式
+
+### 列表推导式
+
+```python
+alist = [i*i for i in  range(1,11) if i%2 == 0]
+```
+
+### 字典推导式
+
+```python
+# 字典推导式
+# 这在爬虫的时候会经常用到 如解析cookies
+adict = {
+    0: "zero",
+    1: "one",
+    2: "two",
+    3: "three"
+}
+bdict = {key:value for key,value in adict.items()}
+print(bdict)
+```
+
+## IO操作
+
+[文件操作例子]()
+
 ## 进程和线程
 
 多线程和多进程最大的不同在于，多进程中，同一个变量，各自有一份拷贝存在于每个进程中，互不影响，而多线程中，所有变量都由所有线程共享，所以，任何一个变量都可以被任何一个线程修改，因此，线程之间共享数据最大的危险在于多个线程同时改一个变量，把内容给改乱了
 
 ## 关于切片操作
 
-[切片操作的例子](https://github.com/ioomie/learning_notes/blob/master/code/python_code_example/part1/c1.py)
+[切片操作例子](https://github.com/ioomie/learning_notes/blob/master/code/python_code_example/part1/c1.py)
+
+## 关于异常
+
+**错误不等于异常**
+
+异常处理流程：
+
+1. 检测到错误，引发异常
+2. 对异常进行捕获
+
