@@ -71,6 +71,7 @@ list_test.insert(1,"ABC")
 
 ```python
 # 删除末尾
+# 返回删除的值
 list_test.pop()
 
 # remove
@@ -220,6 +221,8 @@ set_test.update("abc")
 ```python
 set_test.remove(0)
 ```
+
+### 类型间的转换
 
 ## 一些常用函数
 
@@ -385,4 +388,8 @@ def kvdict(**kwargs):
 kvdict(k1=123, k2=456, k3=789)
 
 ```
+
+[可变长参数例子](https://github.com/ioomie/learning_notes/blob/master/code/python_code_example/part1/c6.py)
+
+## 迭代器
 
