@@ -240,6 +240,70 @@ set_test.remove(0)
 
 返回一个迭代器对象，可以用list()函数进行转换
 
+例子：
+
+```python
+a = [1,2,3,4,5,6,7,8]
+list_ = list(filter(lambda x:x%2 == 0,a))
+print(list_)
+```
+
+### map()
+
+第一个参数为判断函数
+
+第二个对象为一个或多个序列
+
+例子：
+
+```python
+a = [1,2,3,4,5,6,7,8]
+map_ = list(map(lambda x:x%2 == 0,a))
+print(map_)
+```
+
+*关于map和filter的区别：*
+
+> map返回的是由True和False组成的迭代器
+>
+> filter返回的是过滤后的元素而不是True或False本身
+
+### reduce()
+
+用传给 reduce 中的函数 function（有两个参数）先对集合中的第 1、2 个元素进行操作，得到的结果再与第三个数据用 function 函数运算，最后得到一个结果
+
+在python3中需要引入functools模块调用
+
+```python
+from functools import reduce
+
+sum = reduce(lambda x, y: x+y, [1,2,3,4,5])
+print(sum)
+```
+
+### zip()
+
+将对象中对应的元素打包成一个个元组，并返回一个对象
+
+例子：
+
+```python
+a = [1,2,3]
+b = [4,5,6]
+dict_ = {1:"one",2:"two"}
+
+# 返回一个可迭代对象
+zipbacg = zip(a,b)
+for x in zipbacg:
+    print(x)
+# 解压
+print(*zipbacg)
+
+zipdict = zip(dict_.values(),dict_.keys())
+# 类似于矩阵转置
+print(dict(zipdict))
+```
+
 ### isupper()
 
 如果字符串中包含至少一个区分大小写的字符，并且所有这些(区分大小写的)字符都是大写，则返回 True，否则返回 False
@@ -343,6 +407,10 @@ finally:
     file.close()
 ```
 
+### 上下文管理器
+
+with语句，当出现异常的时候会自动执行关闭文件对象的语句
+
 [异常的处理的例子](https://github.com/ioomie/learning_notes/blob/master/code/python_code_example/part1/c5.py)
 
 ## 自定义函数
@@ -391,5 +459,88 @@ kvdict(k1=123, k2=456, k3=789)
 
 [可变长参数例子](https://github.com/ioomie/learning_notes/blob/master/code/python_code_example/part1/c6.py)
 
-## 迭代器
+## 迭代器&生成器
 
+为什么使用迭代器？
+
+> 1. 不依赖索引取值
+> 2. 节省内存
+
+示例：
+
+```python
+# 迭代器生成
+list_ = [1,2,3]
+it = iter(list_)
+print(next(it))
+print(next(it))
+print(next(it))
+# 最后一个会报错
+print(next(it))
+```
+
+一些普通的简单的迭代器不适用于我们一些平常的列子比如使用range函数的时候步长必须是整数不能是小数，这个时候就需要用生成器构建自己的迭代器：
+
+```python
+# 返回一个迭代器
+def frange(start,end,step):
+    x = start
+    while x<end:
+        yield x
+        x += step
+```
+
+[迭代器和生成器实例](https://github.com/ioomie/learning_notes/blob/master/code/python_code_example/part1/c7.py)
+
+## lambda表达式
+
+一般配合一些函数使用
+
+```
+lambda x:xxx
+# 输入的参数:返回结果中运行的语句
+```
+
+[lambda实例](https://github.com/ioomie/learning_notes/blob/master/code/python_code_example/part1/c8.py)
+
+## 闭包
+
+在一个外函数中定义了一个内函数，内函数里运用了外函数的临时变量，并且外函数的返回值是内函数的引用，这样就构成了一个闭包。
+
+[闭包实例](https://github.com/ioomie/learning_notes/blob/master/code/python_code_example/part1/c9.py)
+
+## 装饰器
+
+允许向一个现有的对象添加新的功能，同时又不改变其结构。
+
+```python
+def timer(func):
+    def wrapper():
+        start = time.time()
+        func()
+        end = time.time()
+        print(end-start)
+    return wrapper
+
+# 语法糖
+@timer
+def funccccc():
+    for i in range(0,100000000):
+        pass
+```
+
+一些细分的用法在实例中展示
+
+[装饰器实例](https://github.com/ioomie/learning_notes/blob/master/code/python_code_example/part1/c10.py)
+
+*闭包和装饰器*
+
+> 因为闭包最大的特点就是封装上下文，能够维持一个结构去不断复用而不用改变去改变内部的结构
+>
+> 如果将现有的函数和闭包混合，比如计时器的案例，这可以在我们添加新的函数时候对于一些功能直接进行复用而不是重写
+>
+> 如果有许多新的函数需要被编写而其中有些函数的功能是一样的有些是不一样的，这时候装饰器的作用就开始展现出来了
+>
+> 通过装饰器语法糖的时候可以非常非常轻松去完成一个功能的调用，如函数的计时器，如果我想给这个函数加个计时器则直接运用语法糖的形式便可
+
+## 类和类的继承
