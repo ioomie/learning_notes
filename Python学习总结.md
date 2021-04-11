@@ -411,6 +411,22 @@ finally:
 
 with语句，当出现异常的时候会自动执行关闭文件对象的语句
 
+```python
+# with语句
+class Testwith():
+    def __enter__(self):
+        print("run")
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        if exc_tb is None:
+            print("exit")
+        else:
+            print("something error")
+# 实现上下文自动管理
+with Testwith() as obj:
+    print('with运行')
+    raise NameError("testNameError")
+```
+
 [异常的处理的例子](https://github.com/ioomie/learning_notes/blob/master/code/python_code_example/part1/c5.py)
 
 ## 自定义函数
@@ -544,3 +560,95 @@ def funccccc():
 > 通过装饰器语法糖的时候可以非常非常轻松去完成一个功能的调用，如函数的计时器，如果我想给这个函数加个计时器则直接运用语法糖的形式便可
 
 ## 类和类的继承
+
+类定义：
+
+```python
+class human():
+    # __init__方法的第一个参数永远是self表示实例创建本身
+    def __init__(self,name,sex,years):
+        self.name = name
+        self.sex = sex
+        self.years = years
+
+    def pritn_info(self):
+        print("姓名：%s|性别：%s|年龄：%d" %(self.name,self.sex,self.years))
+```
+
+类继承：
+
+```python
+class Student(Human):
+    def __init__(self,name,sex,years,score,class_):
+        super().__init__(name,sex,years)
+        self.score = score
+        self.class_ =  class_
+
+    def print_Student(self):
+        self.pritn_info()
+        print("班级：%s|分数：%d"%(self.class_,self.score))
+
+class Teacher(Human):
+    def __init__(self,name,sex,years,subject,time):
+        super().__init__(name,sex,years)
+        self.subject = subject
+        self.time = time
+
+    def pritn_Teacher(self):
+        self.pritn_info()
+        print("科目：%s|入职年分：%d")
+```
+
+关于多态
+
+> 在类中子类可以覆写父类的方法，当一个方法作用于不同类对象的时候所返回的结果不同（引发不同的动作）
+
+[类的相关实例](https://github.com/ioomie/learning_notes/blob/master/code/python_code_example/part1/c11.py)
+
+## 多进程和多线程编程
+
+*关于这章我也有很多疑惑，以后要继续学习，继续改正完善笔记*
+
+首先python中的多线程是假的，[这里告诉你为什么是假的](https://github.com/ioomie/learning_notes/blob/master/code/python_code_example/part1/c13.py)
+
+其次python的多线程一般作用于IO（网络信息传递，文件读写），[这里是例子](https://github.com/ioomie/learning_notes/blob/master/code/python_code_example/part1/c14.py)
+
+*我的IO运用因为水平太烂实在是很难比较出为什么适用于IO（多线程只比单线程快了0.2s...），所有我加了一个1秒的阻塞用于表示为什么作用于IO会更好，也希望能跟上面假线程作出对比，在计算密集的情况下加阻塞和不加阻塞都会因为线程GIL锁在线程切换时导致额外的线程开销。**而py中多线程最大的体现应该在多线程爬虫中，对比于一次爬一个网站和一次同时爬多个网站这会有着很明显的时间消耗不同***
+
+### 多线程中的同步问题
+
+在多线程中数据是共享的，在共享数据的时候很可能存在线程不同步的情况
+
+[多线程实例](https://github.com/ioomie/learning_notes/blob/master/code/python_code_example/part1/c12.py)
+
+*线程和进程部分先放下了2021.4.11*
+
+# Python3常用库
+
+## 正则表达式
+
+关于正则表达式的实例只是对其中的简单字符作简单的测试输出，具体的匹配可以参考相关的网站（如电话号码等）
+
+[正则表达式输出实例]()
+
+## JSON数据格式
+
+网络传输常用的数据格式
+
+[JSON数据格式实例]()
+
+## 时间模块
+
+有time和datetime两个模块
+
+[时间调用例子]()
+
+## 文件与文件夹
+
+一般用os模块
+
+但推荐用pathlib 
+
+[简单的例子]()
+
+# Python3具体案例
