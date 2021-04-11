@@ -629,19 +629,19 @@ class Teacher(Human):
 
 关于正则表达式的实例只是对其中的简单字符作简单的测试输出，具体的匹配可以参考相关的网站（如电话号码等）
 
-[正则表达式输出实例]()
+[正则表达式输出实例](https://github.com/ioomie/learning_notes/blob/master/code/python_code_example/part2/c1.py)
 
 ## JSON数据格式
 
 网络传输常用的数据格式
 
-[JSON数据格式实例]()
+[JSON数据格式实例](https://github.com/ioomie/learning_notes/blob/master/code/python_code_example/part2/c2.py)
 
 ## 时间模块
 
 有time和datetime两个模块
 
-[时间调用例子]()
+[时间调用例子](https://github.com/ioomie/learning_notes/blob/master/code/python_code_example/part2/c3.py)
 
 ## 文件与文件夹
 
@@ -649,6 +649,6 @@ class Teacher(Human):
 
 但推荐用pathlib 
 
-[简单的例子]()
+[简单的例子](https://github.com/ioomie/learning_notes/blob/master/code/python_code_example/part2/c4.py)
 
 # Python3具体案例
