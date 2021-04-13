@@ -57,6 +57,15 @@ docker run -itd --privileged -p 4545:22 --name centos_docker centso /usr/sbin/in
 
 ```
 docker ps
+
+查看所用容器 包括未运行的
+docker ps -a
+```
+
+启动暂停的容器
+
+```
+docker start 容器id，用空号分隔可以启动多个
 ```
 
 删除
