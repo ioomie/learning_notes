@@ -189,7 +189,7 @@ tar jxf xxx -C xxx
 
 ## 用户的管理
 
-![image-20210412131009290](images-folder/image-20210412131009290.png)
+![image-20210412131009290](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412131009290.png)
 
 新建用户：useradd 用户名称
 
@@ -214,7 +214,7 @@ root用户的根目录：/root
 
 修改用户属性：chage
 
-![image-20210412131607904](images-folder/image-20210412131607904.png)
+![image-20210412131607904](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412131607904.png)
 
 新建用户组 groupadd 用户组
 
@@ -226,13 +226,13 @@ usermod -g 用户组 用户名
 也可以在新建用户的同时就加入组：
 useradd -g 用户组 用户名
 
-![image-20210412132133716](images-folder/image-20210412132133716.png)
+![image-20210412132133716](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412132133716.png)
 
 切换用户 su - 用户名
 
 /etc/passwd
 
-![image-20210412133720456](images-folder/image-20210412133720456.png)
+![image-20210412133720456](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412133720456.png)
 
 - 用户名
 - 是否需要密码
@@ -248,11 +248,11 @@ useradd -g 用户组 用户名
 
 存放用户密码
 
-![image-20210412134352253](images-folder/image-20210412134352253.png)
+![image-20210412134352253](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412134352253.png)
 
 /etc/group
 
-![image-20210412134516035](images-folder/image-20210412134516035.png)
+![image-20210412134516035](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412134516035.png)
 
 - 组的名称
 - 是否需要密码
@@ -261,21 +261,21 @@ useradd -g 用户组 用户名
 
 ## 文件权限
 
-![image-20210412134747986](images-folder/image-20210412134747986.png)
+![image-20210412134747986](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412134747986.png)
 
 ### 文件类型
 
-![image-20210412135046694](images-folder/image-20210412135046694.png)
+![image-20210412135046694](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412135046694.png)
 
-![image-20210412135224174](images-folder/image-20210412135224174.png)
+![image-20210412135224174](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412135224174.png)
 
 文件权限中一共有9个字符，三个为一组
 
 ### 修改文件权限
 
-![image-20210412135426976](images-folder/image-20210412135426976.png)
+![image-20210412135426976](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412135426976.png)
 
-![image-20210412141311818](images-folder/image-20210412141311818.png)
+![image-20210412141311818](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412141311818.png)
 
  chown 属主:属组
 
@@ -283,7 +283,7 @@ useradd -g 用户组 用户名
 
 ### 特殊权限
 
-![image-20210412143019320](images-folder/image-20210412143019320.png)
+![image-20210412143019320](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412143019320.png)
 
 # Vim
 
@@ -296,7 +296,7 @@ useradd -g 用户组 用户名
 
 ## 关于光标位置：
 
-![image-20210411204621773](images-folder/image-20210411204621773.png)
+![image-20210411204621773](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210411204621773.png)
 
 以上图为例，图片中绿色的是光标本身，新的字符会从光标的前面，也就是绿色盖住的d字符前面添加字符，黄色区域的会跟着字符往后走
 
@@ -371,7 +371,7 @@ vim配置文件设置：
 
 ## 可视模式
 
-![image-20210412125215377](images-folder/image-20210412125215377.png)
+![image-20210412125215377](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412125215377.png)
 
 v 按字符选取
 
@@ -385,7 +385,7 @@ ctrl+v 可视块
 
 ## 网络管理
 
-![image-20210412143941408](images-folder/image-20210412143941408.png)
+![image-20210412143941408](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412143941408.png)
 
 网络状态查看
 
@@ -398,9 +398,9 @@ root用户：ifconfig 查看网络信息
 
 修改网卡的名字：
 
-![image-20210412144229435](images-folder/image-20210412144229435.png)
+![image-20210412144229435](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412144229435.png)
 
-![image-20210412144854188](images-folder/image-20210412144854188.png)
+![image-20210412144854188](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412144854188.png)
 
 查看网卡物理连接情况，主要是网线连接状态
 
@@ -416,11 +416,11 @@ route -n
 
 修改网络配置
 
-![image-20210412151450105](images-folder/image-20210412151450105.png)
+![image-20210412151450105](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412151450105.png)
 
-![image-20210412151503472](images-folder/image-20210412151503472.png)
+![image-20210412151503472](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412151503472.png)
 
-![image-20210412151517982](images-folder/image-20210412151517982.png)
+![image-20210412151517982](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412151517982.png)
 
 ```
 修改网络接口参数
@@ -438,7 +438,7 @@ route del xxxxxxxxxxxxxxxxxxxxx
 
 故障排除
 
-![image-20210412152640810](images-folder/image-20210412152640810.png)
+![image-20210412152640810](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412152640810.png)
 
 - ping	判断是否畅通
 - tarceroute 判断线路间路由的情况
@@ -451,9 +451,9 @@ route del xxxxxxxxxxxxxxxxxxxxx
 
 服务管理
 
-![image-20210412161441448](images-folder/image-20210412161441448.png)
+![image-20210412161441448](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412161441448.png)
 
-![image-20210412161453449](images-folder/image-20210412161453449.png)
+![image-20210412161453449](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412161453449.png)
 
 网络接口配置文件目录：
 
@@ -485,7 +485,7 @@ hostnamectl set-hostname xxxxxxxx
 
 软件安装：
 
-![image-20210412165348984](images-folder/image-20210412165348984.png)
+![image-20210412165348984](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412165348984.png)
 
 ```
 yum redhat 红帽
@@ -494,7 +494,7 @@ apt-get ubuntu 乌邦图
 
 rpm包安装
 
-![image-20210412174912261](images-folder/image-20210412174912261.png)
+![image-20210412174912261](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412174912261.png)
 
 挂载u盘
 
@@ -519,11 +519,11 @@ wget -O /etc/yum.repos.d/CentOS-Linux-BaseOS.repo http://mirrors.aliyun.com/repo
 yum makecache
 ```
 
-![image-20210412180414504](images-folder/image-20210412180414504.png)
+![image-20210412180414504](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412180414504.png)
 
 源代码编译安装
 
-![image-20210412181142261](images-folder/image-20210412181142261.png)
+![image-20210412181142261](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412181142261.png)
 
 1. 下载软件包
 2. 解压缩
@@ -534,13 +534,13 @@ yum makecache
 
 内核安装
 
-![image-20210412183535098](images-folder/image-20210412183535098.png)
+![image-20210412183535098](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412183535098.png)
 
-![image-20210412183547973](images-folder/image-20210412183547973.png)
+![image-20210412183547973](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412183547973.png)
 
-![image-20210412183602303](images-folder/image-20210412183602303.png)
+![image-20210412183602303](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412183602303.png)
 
-![image-20210412183652917](images-folder/image-20210412183652917.png)
+![image-20210412183652917](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412183652917.png)
 
 安装拓展包模块：
 
@@ -556,10 +556,343 @@ yun install kernel
 
 grub引导
 
-![image-20210412184400293](images-folder/image-20210412184400293.png)
+![image-20210412184400293](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412184400293.png)
 
 使用grub修改个人密码
 
 *这里先暂时放下*
 
 ## 进程管理
+
+*概念略过*
+
+查看命令
+
+```
+ps
+
+pstree
+
+top
+
+进程是个树形的结果
+进程和权限有很大关系
+
+ps -e
+查看其他进程
+
+ps -ef
+显示信息拓展
+
+ps -eLf
+线程查看（轻量级进程）
+
+进入top后按数字1可以展示所有的cpu单核情况
+修改信息更新时间按s修改
+```
+
+Linux的第一个进程：
+
+进程的优先级
+
+![image-20210413113004067](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413113004067.png)
+
+决定进程优先级
+
+```
+nice -n xxx(-20~19) ./xxxxxxxx
+PR的值会因为nice的改动而改动
+renice -n xxx 进程号(PID)
+```
+
+进程的前后台切换
+
+```
+将进程于后台运行
+./xxxx &
+
+将后台的进程调回前台
+fg 进程编号(在切换到后台的时候会有显示)
+
+将前台进程放置后台挂起
+ctrl+z
+
+将挂起的程序恢复到后台运行
+bg 进程编号
+
+运用jobs可以查看正在运行的进程
+```
+
+进程通信：信号
+
+```
+kill -l
+查看kill命令的信号
+
+杀死进程的信号
+kill -9 进程PID
+
+```
+
+守护进程（daemon）
+
+关于nohup
+
+> - 阻止`SIGHUP`信号发到这个进程。
+> - 关闭标准输入。该进程不再能够接收任何输入，即使运行在前台。
+> - 重定向标准输出和标准错误到文件`nohup.out`。
+
+```
+nohup xxxxxxx &
+
+这个作用是可以在命令行关闭之后也能继续执行该进程的命令
+
+这里可以开一个node服务器做试验
+
+server.js代码
+var http = require('http');
+  
+http.createServer(function(req,res){
+        res.writeHead(200,{'Content-Type':'text/plain'});
+        res.end('成功收到消息啦！');
+}).listen(5000);
+
+在后台给个防火墙权限
+firewall-cmd --zone=public --add-port=5000/tcp
+
+然后可以用postman或者浏览器访问自己的网址加端口
+浏览器可能会乱码
+```
+
+screen
+
+多重视窗管理程序
+
+```
+screen
+创建终端
+
+screen xxx(vi xxxx)
+创建终端并执行相关命令
+
+ctrl+a d
+退出当前终端
+
+screen -ls
+查看所有的终端
+
+screen -r xxxxxxx(终端名字)
+重新连接离开的终端
+
+screen -S xxx(一般是前面的几个数字) -X quit
+删除终端
+```
+
+关于日志所在位置：
+
+```
+/var/log
+这里面包含了很多的日志记录如系统启动时的内核输出，安全日志等
+```
+
+## 服务管理
+
+service
+
+systemctl
+
+首先关于init命令：
+
+- 0 halt 关机
+- 1 single user mode 单用户模式
+- 2 multiuser 多用户，无网络功能
+- 3 full multiuser 多用户 有网络功能
+- 4 unused 未定义
+- 5 x11 图形桌面坏境
+- 6 reboot 重启
+
+我们可以利用init命令进入到不同的运行级别
+
+![image-20210413162956592](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413162956592.png)
+
+```
+system enable|disable xxx 决定服务是否开机启动
+```
+
+## 安全管理
+
+*先暂时放下firewall*
+
+SELinux
+
+![image-20210413164232698](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413164232698.png)
+
+在实际的生产服务器中该功能会比较消耗性能（大量的警报输出）
+
+```
+/etc/selinux/config
+修改config文件中的SELINUX的选项并重启 可以一直保持修改后的等级
+```
+
+## 内存和磁盘管理
+
+### 内存查看
+
+```
+free 可以搭配参数 -m -g 以不同的单位进行查看
+只查看内存信息
+
+top
+```
+
+关于Swap的作用：
+
+> 如果服务器出现了问题并且我们把虚拟内存给禁用了，比如服务器的实际内存爆满，这时候Linux会有一个很恐怖的机制：**随机kill掉几个占用内存最大的进程**
+
+### 磁盘查看
+
+```
+fdisk -l
+查看硬件盘以及其分区
+
+parted -l
+同上，格式不同
+
+df
+查看相关分区和目录
+
+du
+实际占用空间，有些文件有空洞的占用
+```
+
+如何创建一个空的占一定大小的文件：
+
+```
+dd
+用指定大小的块拷贝一个文件，并在拷贝的同时进行指定的转换
+
+dd if=xxxx(输入的文件) bs=xxM count=xx(复制次数) seek=xx(跳过的区块数) of=xxxx(输出的文件)
+```
+
+常见文件系统
+
+![image-20210413192312894](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413192312894.png)
+
+文件底层结构（ext4）
+
+![image-20210413192455950](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413192455950.png)
+
+超级块相当于文件系统的地图
+
+i节点记录文件的相关属性如权限等等
+
+> 这里可以解释普通文件和目录文件rwx为什么不同，普通文件中i节点记录的是数据块，而目录文件中的i节点是记录着其他文件的名字，所用读取的方式写入的方式执行的方式都是不同的
+
+链接结构
+
+### 底层相关
+
+首先用touch命令创建一个文件并写入相关的字符（几个就好），然后分别用ls和du查看
+
+```
+touch afile
+echo 123 > afile
+ls -li afile
+du -h file
+```
+
+这里可以看到在ls中的占用的是特别小的，但是在du中却是一个4K的文件，因为ext4的格式每创建一个数据块都以4K为一个数据块
+
+然后是cp，cp操作会重写创建一个（或好多）数据块，其中的i结点也会不同
+
+随后是mv，mv操作只是改名，其i结点保持不变，他只改了其根目录记录的i结点；如果是移动到其他分分区就会改变其i结点
+
+如果是vim改变了文件内容且没有用硬连接的时候，那文件的i结点会发生改变（echo则不会）
+
+rm，将文件名和i结点断开，其数据块不会被删除
+
+链接两个文件（同一分区）
+
+```
+ln file1 file2
+```
+
+对两个文件中的其中一个修改都会同时修改
+
+创建软链接（符号链接，非同一分区）
+
+```
+ln -s file1 file2
+```
+
+文件访问控制列表
+
+```
+getfacl xxxx
+查看文件的权限
+
+setfacl -m u:(中间可以指定用户，若为空则表示全部):rwx xxx
+给文件指定不同用户的不同权限
+```
+
+![image-20210413195548796](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413195548796.png)
+
+### 硬盘的分区挂载
+
+![image-20210413195723262](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413195723262.png)
+
+格式化和分区操作
+
+```
+fdisk /dev/xxx(一般是这样)
+```
+
+![image-20210413200531100](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413200531100.png)
+
+利用+50G的格式将分区设置50G大小
+
+盘符映射
+
+```
+mkfs.ext4 (具体按tab查看对应格式) /dev/sda1xxx(这里用fdisk -l查看建立起来分区)
+```
+
+硬盘挂载
+
+```
+mkdir /mnt/xxxx
+创建挂载目录
+
+mount /dev/xxxx(要被挂载的分区) /mun/xxx(刚刚创建的挂载目录)
+执行挂载操作
+```
+
+![image-20210413201851694](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413201851694.png)
+
+*注意，这里的挂载是临时的，需要进配置文件添加配置进行固化*
+
+固化操作
+
+进入到/etc/fstab 文件中添加相关参数
+
+![image-20210413202555798](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413202555798.png)
+
+*为什么要挂载？*
+
+以远程ftp为例，就算我是以root用户登入也无法直接访问硬盘本身：
+
+![image-20210413205659217](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413205659217.png)
+
+但我可以传输文件到挂载了硬盘的目录：
+
+![image-20210413205852130](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413205852130.png)
+
+用户磁盘配额
+
+![image-20210413210023978](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413210023978.png)
+
+### 交换分区
+
+用一个分区创建一个swap
+
+![image-20210413210156093](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413210156093.png)
