@@ -1,3 +1,7 @@
+---
+typora-copy-images-to: images-folder
+---
+
 # Linux学习总结
 
 一切皆文件
@@ -18,7 +22,7 @@ ls /root /home
 
 ls -l
 
-![image-20210406110140408](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406110140408.png)
+![image-20210406110140408](http://hehe_thirtyseven.gitee.io/images/image-20210406110140408.png)
 
 从左到右边依次是：
 
@@ -30,7 +34,7 @@ ls -ld 配合使用用于显示当前目录自身的信息
 
 ls -a
 
-![image-20210406110742565](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406110742565.png)
+![image-20210406110742565](http://hehe_thirtyseven.gitee.io/images/image-20210406110742565.png)
 
 ### 逆向显示
 
@@ -50,9 +54,9 @@ ls -lrt
 
 ls -R
 
-![image-20210406111045798](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406111045798.png)
+![image-20210406111045798](http://hehe_thirtyseven.gitee.io/images/image-20210406111045798.png)
 
-![image-20210406111102006](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406111102006.png)
+![image-20210406111102006](http://hehe_thirtyseven.gitee.io/images/image-20210406111102006.png)
 
 ## cd
 
@@ -73,7 +77,7 @@ cd -
 
 cd ..
 
-![image-20210406113027211](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406113027211.png)
+![image-20210406113027211](http://hehe_thirtyseven.gitee.io/images/image-20210406113027211.png)
 
 ## 目录操作
 
@@ -93,7 +97,7 @@ mkdir xxx/xxx/xxx 创建多级目录
 
 mkdir -p xxx/xxx/xxx 递归创建 当上级目录不存在的时候也会创建而不是提示找不到该文件
 
-![image-20210406182802549](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406182802549.png)
+![image-20210406182802549](http://hehe_thirtyseven.gitee.io/images/image-20210406182802549.png)
 
 *可以利用ls -R xxx 来检查该递归创建的结果*
 
@@ -105,7 +109,7 @@ rm -r 删除目录 非空也能删除
 
 rm -r -f 删除目录且不提示
 
-![image-20210406194834508](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406194834508.png)
+![image-20210406194834508](http://hehe_thirtyseven.gitee.io/images/image-20210406194834508.png)
 
 ## 复制和移动
 
@@ -119,7 +123,7 @@ cp -p 复制过去的时候保存之前的时间不作修改
 
 cp -a 复制所有的信息包括权限
 
-![image-20210406194800460](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406194800460.png)
+![image-20210406194800460](http://hehe_thirtyseven.gitee.io/images/image-20210406194800460.png)
 
 ## 改名（移动）
 
@@ -129,7 +133,7 @@ cp -a 复制所有的信息包括权限
 
 mv 旧文件 新文件
 
-![image-20210406194813318](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406194813318.png)
+![image-20210406194813318](http://hehe_thirtyseven.gitee.io/images/image-20210406194813318.png)
 
 ## 通配符
 
@@ -137,7 +141,7 @@ mv 旧文件 新文件
 
 问号 匹配一个字符
 
-![image-20210406194845740](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406194845740.png)
+![image-20210406194845740](http://hehe_thirtyseven.gitee.io/images/image-20210406194845740.png)
 
 ## 文本查看
 
@@ -157,11 +161,11 @@ tail -f xxx
 
 wc
 
-![image-20210406194947873](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406194947873.png)
+![image-20210406194947873](http://hehe_thirtyseven.gitee.io/images/image-20210406194947873.png)
 
 ## 打包压缩
 
-![image-20210406202911068](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210406202911068.png)
+![image-20210406202911068](http://hehe_thirtyseven.gitee.io/images/image-20210406202911068.png)
 
 ### 打包
 
@@ -189,7 +193,7 @@ tar jxf xxx -C xxx
 
 ## 用户的管理
 
-![image-20210412131009290](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412131009290.png)
+![image-20210412131009290](http://hehe_thirtyseven.gitee.io/images/image-20210412131009290.png)
 
 新建用户：useradd 用户名称
 
@@ -214,7 +218,7 @@ root用户的根目录：/root
 
 修改用户属性：chage
 
-![image-20210412131607904](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412131607904.png)
+![image-20210412131607904](http://hehe_thirtyseven.gitee.io/images/image-20210412131607904.png)
 
 新建用户组 groupadd 用户组
 
@@ -226,13 +230,13 @@ usermod -g 用户组 用户名
 也可以在新建用户的同时就加入组：
 useradd -g 用户组 用户名
 
-![image-20210412132133716](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412132133716.png)
+![image-20210412132133716](http://hehe_thirtyseven.gitee.io/images/image-20210412132133716.png)
 
 切换用户 su - 用户名
 
 /etc/passwd
 
-![image-20210412133720456](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412133720456.png)
+![image-20210412133720456](http://hehe_thirtyseven.gitee.io/images/image-20210412133720456.png)
 
 - 用户名
 - 是否需要密码
@@ -248,11 +252,11 @@ useradd -g 用户组 用户名
 
 存放用户密码
 
-![image-20210412134352253](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412134352253.png)
+![image-20210412134352253](http://hehe_thirtyseven.gitee.io/images/image-20210412134352253.png)
 
 /etc/group
 
-![image-20210412134516035](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412134516035.png)
+![image-20210412134516035](http://hehe_thirtyseven.gitee.io/images/image-20210412134516035.png)
 
 - 组的名称
 - 是否需要密码
@@ -261,21 +265,21 @@ useradd -g 用户组 用户名
 
 ## 文件权限
 
-![image-20210412134747986](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412134747986.png)
+![image-20210412134747986](http://hehe_thirtyseven.gitee.io/images/image-20210412134747986.png)
 
 ### 文件类型
 
-![image-20210412135046694](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412135046694.png)
+![image-20210412135046694](http://hehe_thirtyseven.gitee.io/images/image-20210412135046694.png)
 
-![image-20210412135224174](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412135224174.png)
+![image-20210412135224174](http://hehe_thirtyseven.gitee.io/images/image-20210412135224174.png)
 
 文件权限中一共有9个字符，三个为一组
 
 ### 修改文件权限
 
-![image-20210412135426976](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412135426976.png)
+![image-20210412135426976](http://hehe_thirtyseven.gitee.io/images/image-20210412135426976.png)
 
-![image-20210412141311818](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412141311818.png)
+![image-20210412141311818](http://hehe_thirtyseven.gitee.io/images/image-20210412141311818.png)
 
  chown 属主:属组
 
@@ -283,7 +287,7 @@ useradd -g 用户组 用户名
 
 ### 特殊权限
 
-![image-20210412143019320](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412143019320.png)
+![image-20210412143019320](http://hehe_thirtyseven.gitee.io/images/image-20210412143019320.png)
 
 # Vim
 
@@ -296,7 +300,7 @@ useradd -g 用户组 用户名
 
 ## 关于光标位置：
 
-![image-20210411204621773](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210411204621773.png)
+![image-20210411204621773](http://hehe_thirtyseven.gitee.io/images/image-20210411204621773.png)
 
 以上图为例，图片中绿色的是光标本身，新的字符会从光标的前面，也就是绿色盖住的d字符前面添加字符，黄色区域的会跟着字符往后走
 
@@ -371,7 +375,7 @@ vim配置文件设置：
 
 ## 可视模式
 
-![image-20210412125215377](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412125215377.png)
+![image-20210412125215377](http://hehe_thirtyseven.gitee.io/images/image-20210412125215377.png)
 
 v 按字符选取
 
@@ -385,7 +389,7 @@ ctrl+v 可视块
 
 ## 网络管理
 
-![image-20210412143941408](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412143941408.png)
+![image-20210412143941408](http://hehe_thirtyseven.gitee.io/images/image-20210412143941408.png)
 
 网络状态查看
 
@@ -398,9 +402,9 @@ root用户：ifconfig 查看网络信息
 
 修改网卡的名字：
 
-![image-20210412144229435](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412144229435.png)
+![image-20210412144229435](http://hehe_thirtyseven.gitee.io/images/image-20210412144229435.png)
 
-![image-20210412144854188](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412144854188.png)
+![image-20210412144854188](http://hehe_thirtyseven.gitee.io/images/image-20210412144854188.png)
 
 查看网卡物理连接情况，主要是网线连接状态
 
@@ -416,11 +420,11 @@ route -n
 
 修改网络配置
 
-![image-20210412151450105](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412151450105.png)
+![image-20210412151450105](http://hehe_thirtyseven.gitee.io/images/image-20210412151450105.png)
 
-![image-20210412151503472](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412151503472.png)
+![image-20210412151503472](http://hehe_thirtyseven.gitee.io/images/image-20210412151503472.png)
 
-![image-20210412151517982](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412151517982.png)
+![image-20210412151517982](http://hehe_thirtyseven.gitee.io/images/image-20210412151517982.png)
 
 ```
 修改网络接口参数
@@ -438,7 +442,7 @@ route del xxxxxxxxxxxxxxxxxxxxx
 
 故障排除
 
-![image-20210412152640810](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412152640810.png)
+![image-20210412152640810](http://hehe_thirtyseven.gitee.io/images/image-20210412152640810.png)
 
 - ping	判断是否畅通
 - tarceroute 判断线路间路由的情况
@@ -451,9 +455,9 @@ route del xxxxxxxxxxxxxxxxxxxxx
 
 服务管理
 
-![image-20210412161441448](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412161441448.png)
+![image-20210412161441448](http://hehe_thirtyseven.gitee.io/images/image-20210412161441448.png)
 
-![image-20210412161453449](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412161453449.png)
+![image-20210412161453449](http://hehe_thirtyseven.gitee.io/images/image-20210412161453449.png)
 
 网络接口配置文件目录：
 
@@ -485,7 +489,7 @@ hostnamectl set-hostname xxxxxxxx
 
 软件安装：
 
-![image-20210412165348984](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412165348984.png)
+![image-20210412165348984](http://hehe_thirtyseven.gitee.io/images/image-20210412165348984.png)
 
 ```
 yum redhat 红帽
@@ -494,7 +498,7 @@ apt-get ubuntu 乌邦图
 
 rpm包安装
 
-![image-20210412174912261](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412174912261.png)
+![image-20210412174912261](http://hehe_thirtyseven.gitee.io/images/image-20210412174912261.png)
 
 挂载u盘
 
@@ -519,11 +523,11 @@ wget -O /etc/yum.repos.d/CentOS-Linux-BaseOS.repo http://mirrors.aliyun.com/repo
 yum makecache
 ```
 
-![image-20210412180414504](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412180414504.png)
+![image-20210412180414504](http://hehe_thirtyseven.gitee.io/images/image-20210412180414504.png)
 
 源代码编译安装
 
-![image-20210412181142261](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412181142261.png)
+![image-20210412181142261](http://hehe_thirtyseven.gitee.io/images/image-20210412181142261.png)
 
 1. 下载软件包
 2. 解压缩
@@ -534,13 +538,13 @@ yum makecache
 
 内核安装
 
-![image-20210412183535098](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412183535098.png)
+![image-20210412183535098](http://hehe_thirtyseven.gitee.io/images/image-20210412183535098.png)
 
-![image-20210412183547973](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412183547973.png)
+![image-20210412183547973](http://hehe_thirtyseven.gitee.io/images/image-20210412183547973.png)
 
-![image-20210412183602303](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412183602303.png)
+![image-20210412183602303](http://hehe_thirtyseven.gitee.io/images/image-20210412183602303.png)
 
-![image-20210412183652917](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412183652917.png)
+![image-20210412183652917](http://hehe_thirtyseven.gitee.io/images/image-20210412183652917.png)
 
 安装拓展包模块：
 
@@ -556,7 +560,7 @@ yun install kernel
 
 grub引导
 
-![image-20210412184400293](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210412184400293.png)
+![image-20210412184400293](http://hehe_thirtyseven.gitee.io/images/image-20210412184400293.png)
 
 使用grub修改个人密码
 
@@ -595,7 +599,7 @@ Linux的第一个进程：
 
 进程的优先级
 
-![image-20210413113004067](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413113004067.png)
+![image-20210413113004067](http://hehe_thirtyseven.gitee.io/images/image-20210413113004067.png)
 
 决定进程优先级
 
@@ -658,7 +662,7 @@ http.createServer(function(req,res){
 }).listen(5000);
 
 在后台给个防火墙权限
-firewall-cmd --zone=public --add-port=5000/tcp
+firewall-cmd --zone=public --add-port=5000/tcp (--permanent可以设置永久生效)
 
 然后可以用postman或者浏览器访问自己的网址加端口
 浏览器可能会乱码
@@ -713,7 +717,7 @@ systemctl
 
 我们可以利用init命令进入到不同的运行级别
 
-![image-20210413162956592](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413162956592.png)
+![image-20210413162956592](http://hehe_thirtyseven.gitee.io/images/image-20210413162956592.png)
 
 ```
 system enable|disable xxx 决定服务是否开机启动
@@ -721,11 +725,11 @@ system enable|disable xxx 决定服务是否开机启动
 
 ## 安全管理
 
-*先暂时放下firewall*
+*先暂时放下firewalld*
 
 SELinux
 
-![image-20210413164232698](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413164232698.png)
+![image-20210413164232698](http://hehe_thirtyseven.gitee.io/images/image-20210413164232698.png)
 
 在实际的生产服务器中该功能会比较消耗性能（大量的警报输出）
 
@@ -776,11 +780,11 @@ dd if=xxxx(输入的文件) bs=xxM count=xx(复制次数) seek=xx(跳过的区�
 
 常见文件系统
 
-![image-20210413192312894](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413192312894.png)
+![image-20210413192312894](http://hehe_thirtyseven.gitee.io/images/image-20210413192312894.png)
 
 文件底层结构（ext4）
 
-![image-20210413192455950](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413192455950.png)
+![image-20210413192455950](http://hehe_thirtyseven.gitee.io/images/image-20210413192455950.png)
 
 超级块相当于文件系统的地图
 
@@ -835,11 +839,11 @@ setfacl -m u:(中间可以指定用户，若为空则表示全部):rwx xxx
 给文件指定不同用户的不同权限
 ```
 
-![image-20210413195548796](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413195548796.png)
+![image-20210413195548796](http://hehe_thirtyseven.gitee.io/images/image-20210413195548796.png)
 
 ### 硬盘的分区挂载
 
-![image-20210413195723262](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413195723262.png)
+![image-20210413195723262](http://hehe_thirtyseven.gitee.io/images/image-20210413195723262.png)
 
 格式化和分区操作
 
@@ -847,7 +851,7 @@ setfacl -m u:(中间可以指定用户，若为空则表示全部):rwx xxx
 fdisk /dev/xxx(一般是这样)
 ```
 
-![image-20210413200531100](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413200531100.png)
+![image-20210413200531100](http://hehe_thirtyseven.gitee.io/images/image-20210413200531100.png)
 
 利用+50G的格式将分区设置50G大小
 
@@ -867,7 +871,7 @@ mount /dev/xxxx(要被挂载的分区) /mun/xxx(刚刚创建的挂载目录)
 执行挂载操作
 ```
 
-![image-20210413201851694](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413201851694.png)
+![image-20210413201851694](http://hehe_thirtyseven.gitee.io/images/image-20210413201851694.png)
 
 *注意，这里的挂载是临时的，需要进配置文件添加配置进行固化*
 
@@ -875,24 +879,50 @@ mount /dev/xxxx(要被挂载的分区) /mun/xxx(刚刚创建的挂载目录)
 
 进入到/etc/fstab 文件中添加相关参数
 
-![image-20210413202555798](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413202555798.png)
+![image-20210413202555798](http://hehe_thirtyseven.gitee.io/images/image-20210413202555798.png)
 
 *为什么要挂载？*
 
 以远程ftp为例，就算我是以root用户登入也无法直接访问硬盘本身：
 
-![image-20210413205659217](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413205659217.png)
+![image-20210413205659217](http://hehe_thirtyseven.gitee.io/images/image-20210413205659217.png)
 
 但我可以传输文件到挂载了硬盘的目录：
 
-![image-20210413205852130](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413205852130.png)
+![image-20210413205852130](http://hehe_thirtyseven.gitee.io/images/image-20210413205852130.png)
 
 用户磁盘配额
 
-![image-20210413210023978](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413210023978.png)
+![image-20210413210023978](http://hehe_thirtyseven.gitee.io/images/image-20210413210023978.png)
 
 ### 交换分区
 
 用一个分区创建一个swap
 
-![image-20210413210156093](https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/image-20210413210156093.png)
+![image-20210413210156093](http://hehe_thirtyseven.gitee.io/images/image-20210413210156093.png)
+
+# 常用软件安装
+
+## tomcat
+
+该应用服务器需要下载三个包：
+
+```
+yum install tomcat tomcat-webapps tomcat-admin-webapps
+```
+
+装完后记得开防火墙端口
+
+```
+firewall-cmd --zone=public --add-port=8080/tcp (后面可以加个永久)
+```
+
+如果是云服务器要去安全组上添加入站开放
+
+![image-20210415163512650](http://hehe_thirtyseven.gitee.io/images/image-20210415163512650.png)
+
+*当时这里不知道发生了什么误操作导致系统的内核崩溃，无奈之下重装了系统*
+
+![image-20210415163637692](http://hehe_thirtyseven.gitee.io/images/image-20210415163637692.png)
+
+*这里留下给以后看看能不能入手解决而不是只能重装系统*

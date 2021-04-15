@@ -3,7 +3,7 @@
     炸金花小游戏？
     写的并不好
     苏宁面试题
-    题目要求在这：https://raw.githubusercontent.com/ioomie/learning_notes/master/images-folder/pk.png
+    题目要求在这：http://hehe_thirtyseven.gitee.io/images/pk.png
     要求用时1小时
     实际用时2小时...
 '''
