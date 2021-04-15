@@ -1,7 +1,3 @@
----
-typora-copy-images-to: images-folder
----
-
 # Linux学习总结
 
 一切皆文件
