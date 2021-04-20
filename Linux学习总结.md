@@ -922,3 +922,28 @@ firewall-cmd --zone=public --add-port=8080/tcp (后面可以加个永久)
 ![image-20210415163637692](http://hehe_thirtyseven.gitee.io/images/image-20210415163637692.png)
 
 *这里留下给以后看看能不能入手解决而不是只能重装系统*
+
+## Nginx
+
+安装命令
+
+```
+yum install nginx
+```
+
+运行
+
+```
+systemctl start nginx
+默认开放80端口
+```
+
+如果是云服务器记得添加安全组
+
+在系统中要开放firewall端口 （80）
+
+```
+firewall-cmd --zone=public --add-port=80/tcp (可以加个永久) 
+```
+
+随后可以在浏览器上通过ip:80的方式访问到一个开始欢迎界面（如果是centos则会弹出centos的一个介绍页面）
