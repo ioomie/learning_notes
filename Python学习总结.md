@@ -623,6 +623,12 @@ class Teacher(Human):
 
 *线程和进程部分先放下了2021.4.11*
 
+## Socket编程
+
+*关于TCP的相关概念见计算机网络笔记*
+
+
+
 # Python3常用库
 
 ## 正则表达式
@@ -650,5 +656,7 @@ class Teacher(Human):
 但推荐用pathlib 
 
 [简单的例子](https://github.com/ioomie/learning_notes/blob/master/code/python_code_example/part2/c4.py)
+
+
 
 # Python3具体案例
