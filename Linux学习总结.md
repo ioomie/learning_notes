@@ -899,7 +899,7 @@ mount /dev/xxxx(要被挂载的分区) /mun/xxx(刚刚创建的挂载目录)
 
 # 常用软件安装
 
-## tomcat
+## Tomcat
 
 该应用服务器需要下载三个包：
 
@@ -942,8 +942,97 @@ systemctl start nginx
 
 在系统中要开放firewall端口 （80）
 
-```
+```bash
 firewall-cmd --zone=public --add-port=80/tcp (可以加个永久) 
 ```
 
 随后可以在浏览器上通过ip:80的方式访问到一个开始欢迎界面（如果是centos则会弹出centos的一个介绍页面）
+
+## Anaconda
+
+[官网地址](https://www.anaconda.com/products/individual)
+
+找到下载地址
+
+```bash
+wegt https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
+```
+
+等待下载完毕后：
+
+```
+bash ./Anacxxxx
+```
+
+![image-20210426201217816](E:\images\image-20210426201217816.png)
+
+![image-20210426201234552](E:\images\image-20210426201234552.png)
+
+这里可以更改安装位置，我这里选择了默认
+
+![image-20210426201249278](E:\images\image-20210426201249278.png)
+
+后面就按照流程 yes就行（因为现在看不懂就先这样操作吧）
+
+如果发现用不了conda的环境，可能是环境变量没配置好，需要配置环境变量：
+
+![image-20210426201743099](E:\images\image-20210426201743099.png)
+
+1. vim 打开 ~/.bashrc
+
+   ![image-20210426201904481](E:\images\image-20210426201904481.png)
+
+2. 添加 export PATH=/xxx/xxx/xxx/anaconda3/bin:$bin（这里的路径是anaconda3的路径）
+
+   *前提是里面没有，如果有的话就只要做一下第三步刷新一下就可以了*
+
+   ![image-20210426202134294](E:\images\image-20210426202134294.png)
+
+   *像这里就有个判断，如果环境不存在就判断选择*
+
+3. 刷新 source ~/.bashrc
+
+4. 输入python可得到是否是anaconda的python
+
+## Redis
+
+[下载网址](https://redis.io/)
+
+解压
+
+```
+tar -zxvf 安装包
+```
+
+进入文件 执行编译
+
+```
+make
+make
+make install
+```
+
+最终的目录：/usr/loacl/bin
+
+拷贝原配置文件
+
+```
+mkdir xxxconfig
+cp /xxx/xxx/xxx xxxconfig
+```
+
+后台启动
+
+![image-20210425170135163](E:\images\image-20210425170135163.png)
+
+启动Redis（通过指定的配置文件）
+
+```
+redis-server xxxx/redis.conf
+
+# 用redis-cli连接
+redis-cli -p 6379
+```
+
+![image-20210425170523084](E:\images\image-20210425170523084.png)
+
