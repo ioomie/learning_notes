@@ -21,12 +21,14 @@ funccccc()
 def timer_v2(func):
     def wrapper(*args):
         func(args[0],args[1])
+        print("输入的参数个数",len(args))
     return wrapper
 
 def timer_v3(func):
     def warpper(**kwargs):
         for k,v in kwargs.items():
             func(k,v)
+        print("输入的键值对个数",len(kwargs))
     return warpper
 
 @timer_v2

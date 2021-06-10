@@ -2,7 +2,72 @@
 
 一切皆文件
 
+# 杂项
+
+## 命令提示符
+
+prompt
+
+![image-20210610210215779](E:\images\image-20210610210215779.png)
+
+- 管理员 #
+- 普通用户 $
+
+## shell可执行命令种类
+
+### 内建命令
+
+由shell自带
+
+### 外部命令
+
+在当前系统某文件里有对应的可执行文件
+
+判断方式
+
+```
+# type COMMAND
+```
+
+## Linux的时钟
+
+两种时钟
+
+### 系统时钟
+
+Linux内核通过cpu的工作频率进行的计时
+
+### 硬件时钟
+
+
+
 # 命令大全
+
+### 基础命令
+
+#### date
+
+```
+显示时间
+date 
+date +%A
+date +%D
+date +%T
+date +%F-%H
+
+修改时间
+date MMDDhhmmCCYY.ss
+```
+
+### 管理类命令
+
+显示当前使用的shell
+
+```
+# echo $SHELL
+```
+
+关机
 
 ## pwd
 
@@ -74,6 +139,32 @@ cd -
 cd ..
 
 ![image-20210406113027211](http://hehe_thirtyseven.gitee.io/images/image-20210406113027211.png)
+
+## find
+
+查找指定文件
+
+查找指定名字文件
+
+find -iname xxx
+
+查找home下所有空文件
+
+find ~ -empyt
+
+在/usr下找出大小超过10MB的文件
+
+## sed
+
+stream editor 增删改查 过滤
+
+#### 增
+
+```
+sed '2a xxxxx' 文件名
+```
+
+
 
 ## 目录操作
 
